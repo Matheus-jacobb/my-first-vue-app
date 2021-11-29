@@ -18,7 +18,7 @@
         </v-card-title>
 
         <v-card-subtitle>
-          {{movie.subtitle}}
+          {{movie.weekdays}}
         </v-card-subtitle>
 
         <v-card-actions>
@@ -57,7 +57,7 @@
 
 <style>
 .container-recents{
-  display: grid;
+  display: grid !important;
   grid-row-gap: 20px;
   grid-column-gap: 1rem;
   grid-template-columns: repeat(4, 1fr);

@@ -5,54 +5,167 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+
+    locales: [
+      {
+        imgSrc: 'https://queconceito.com.br/wp-content/uploads/Cinema.jpg',
+        city: 'NEW ORLEANS',
+        address: 'ST: EMILIA, 1238',
+      },
+      {
+        imgSrc: 'https://agendasorocaba.com.br/wp-content/uploads/2013/10/multiplex-shopping-cidade.jpg',
+        city: 'SOROCABA',
+        address: 'ST: JOAO, 233',
+      },
+      {
+        imgSrc: 'https://agendasorocaba.com.br/wp-content/uploads/2013/10/cinepolis-sorocaba-1.jpg',
+        city: 'SAO PAULO',
+        address: 'AV: DAS FLORES, 456',
+      },
+      {
+        imgSrc: 'https://images.adsttc.com/media/images/58d5/3a58/e58e/ce48/a700/003f/large_jpg/002.jpg?1490369108',
+        city: 'CALIFORNIA',
+        address: 'AV: HUG, 843',
+      },
+
+    ],
+
     theaterMovies: [
       {
         title: 'Ghostbusters: Afterlife',
-        subtitle: 'WEDNESDAY - FRIDAY - SATURDAY',
+        weekdays: 'WEDNESDAY - FRIDAY - SATURDAY',
         imgUrl: 'https://www.cinemark.com/media/75985599/lg_imax_gb.jpg',
-        description: ''
+        schedule:[{
+          weekday: 'WED',
+          time: '9AM',
+        },
+          {
+            weekday: 'FRI',
+            time: '10AM',
+          },
+          {
+            weekday: 'WED',
+            time: '12AM',
+          }]
       },
       {
         title: 'Resident Evil: Welcome to Raccoon City',
-        subtitle: 'MONDAY - THURSDAY - FRIDAY',
+        weekdays: 'MONDAY - THURSDAY - FRIDAY',
         imgUrl: 'https://www.cinemark.com/media/75987260/lg_final_re.jpg',
-        description: ''
+        schedule:[{
+          weekday: 'MON',
+          time: '9AM',
+        },
+          {
+            weekday: 'THU',
+            time: '4PM',
+          },
+          {
+            weekday: 'FRI',
+            time: '10PM',
+          }]
       },
       {
         title: 'House of Gucci',
-        subtitle: 'SUNDAY - THURSDAY - SATURDAY',
+        weekdays: 'SUNDAY - THURSDAY - SATURDAY',
         imgUrl: 'https://www.cinemark.com/media/75985038/lg_hog.jpg',
-        description: ''
+        schedule:[{
+          weekday: 'SUN',
+          time: '9AM',
+        },
+          {
+            weekday: 'THU',
+            time: '5AM',
+          },
+          {
+            weekday: 'SAT',
+            time: '3AM',
+          }]
       },
       {
         title: 'Clifford the Big Red Dog',
-        subtitle: 'SUNDAY - WEDNESDAY - FRIDAY',
+        weekdays: 'SUNDAY - WEDNESDAY - FRIDAY',
         imgUrl: 'https://www.cinemark.com/media/75985588/lg_final_clifford.jpg',
-        description: ''
+        schedule:[{
+          weekday: 'SUN',
+          time: '9AM',
+        },
+          {
+            weekday: 'WED',
+            time: '7AM',
+          },
+          {
+            weekday: 'FRI',
+            time: '10PM',
+          }]
       },
       {
         title: 'Eternals',
-        subtitle: 'SUNDAY - FRIDAY - SATURDAY',
+        weekdays: 'SUNDAY - FRIDAY - SATURDAY',
         imgUrl: 'https://www.cinemark.com/media/75983277/lg_payoff_eternals.jpg',
-        description: ''
+        schedule:[{
+          weekday: 'SUN',
+          time: '9AM',
+        },
+          {
+            weekday: 'FRI',
+            time: '9AM',
+          },
+          {
+            weekday: 'SAT',
+            time: '9AM',
+          }]
       },
       {
         title: 'Christmas With The Chosen: The Messengers',
-        subtitle: 'SUNDAY - FRIDAY - SATURDAY',
+        weekdays: 'SUNDAY - FRIDAY - SATURDAY',
         imgUrl: 'https://www.cinemark.com/media/75985963/lg_cwtc.jpg',
-        description: ''
+        schedule:[{
+          weekday: 'WED',
+          time: '9AM',
+        },
+          {
+            weekday: 'FRI',
+            time: '9AM',
+          },
+          {
+            weekday: 'SAT',
+            time: '9AM',
+          }]
       },
       {
         title: 'Encanto',
-        subtitle: 'WEDNESDAY - THURSDAY - SATURDAY',
+        weekdays: 'WEDNESDAY - THURSDAY - SATURDAY',
         imgUrl: 'https://www.cinemark.com/media/75985003/lg_payoff_encanto.jpg',
-        description: ''
+        schedule:[{
+          weekday: 'WED',
+          time: '9AM',
+        },
+          {
+            weekday: 'THU',
+            time: '9AM',
+          },
+          {
+            weekday: 'SAT',
+            time: '9AM',
+          }]
       },
       {
         title: 'King Richard',
-        subtitle: 'MONDAY - FRIDAY - SATURDAY',
+        weekdays: 'MONDAY - FRIDAY - SATURDAY',
         imgUrl: 'https://www.cinemark.com/media/75984160/king_richard_poster_large.jpg',
-        description: ''
+        schedule:[{
+          weekday: 'MON',
+          time: '9AM',
+        },
+          {
+            weekday: 'FRI',
+            time: '9AM',
+          },
+          {
+            weekday: 'SAT',
+            time: '9AM',
+          }]
       }
     ],
 
