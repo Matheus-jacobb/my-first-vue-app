@@ -47,7 +47,7 @@ const routes = [
   {
     path: '/schedule',
     name: 'schedules',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Schedule')
+    component: () => import(/* webpackChunkName: "about" */ '../views/Schedule' )
   },
 ]
 
