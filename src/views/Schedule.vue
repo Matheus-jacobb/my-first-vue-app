@@ -12,7 +12,7 @@
               flat
           >
             <v-img
-                :src="movie.imageUrl"
+                :src="movie.imgUrl"
             >
             </v-img>
           </v-card>
