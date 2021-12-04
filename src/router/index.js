@@ -49,6 +49,11 @@ const routes = [
     name: 'schedules',
     component: () => import(/* webpackChunkName: "about" */ '../views/Schedule' )
   },
+  {
+    path: '/premiere',
+    name: 'premiere',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Premiere' )
+  },
 ]
 
 const router = new VueRouter({
