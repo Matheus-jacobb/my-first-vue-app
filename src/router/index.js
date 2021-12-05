@@ -50,9 +50,9 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/Schedule' )
   },
   {
-    path: '/premiere',
-    name: 'premiere',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Premiere' )
+    path: '/upcoming',
+    name: 'upcoming',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Upcoming' )
   },
 ]
 

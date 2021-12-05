@@ -35,6 +35,12 @@
               </v-list-item-icon>
               <v-list-item-title>Movies</v-list-item-title>
             </v-list-item>
+            <v-list-item href="/upcoming">
+              <v-list-item-icon>
+                <v-icon>mdi-movie-filter</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Upcoming</v-list-item-title>
+            </v-list-item>
             <v-list-item href="/">
               <v-list-item-icon>
                 <v-icon>mdi-heart</v-icon>
@@ -93,7 +99,7 @@
           class="overflow-y-auto background"
       >
         <v-container>
-          <v-main>
+          <v-main class="main">
             <router-view/>
           </v-main>
         </v-container>
@@ -153,6 +159,14 @@ export default {
 </script>
 
 <style lang="scss">
+
+.main{
+  padding-top: 4rem !important;
+}
+
+.container{
+  min-height: 100vh;
+}
 
 .v-btn__content{
   i{

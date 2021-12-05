@@ -210,8 +210,8 @@ export default new Vuex.Store({
         SET_PREMIERE: (state, payload) => (state.premiere = payload),
     },
     actions: {
-        fetchPremieres({commit}) {
-            axios.get(`https://api.themoviedb.org/3/movie/upcoming?api_key=a16ea728297818060c2ed1e5a6f1d09a`)
+        async fetchPremieres ({commit}) {
+            await axios.get(`https://api.themoviedb.org/3/movie/upcoming?api_key=a16ea728297818060c2ed1e5a6f1d09a`)
                 .then(res => {
                     const payload = (res.data.results);
                     //order by ASC date
